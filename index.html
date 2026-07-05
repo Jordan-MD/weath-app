@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
 
-    <script src="./js/main.js" defer></script>
+    <script src="./js/main.js" type="module" defer></script>
 
     <title>Weather App MD</title>
   </head>
@@ -18,7 +18,7 @@
           <h1>Weather app MD</h1>
         </header>
 
-        <form class="search-form" role="search" action="#" method="GET">
+        <form class="searchForm" role="search" action="#" method="GET">
           <input
             type="text"
             id="city-input"
@@ -28,6 +28,10 @@
           />
           <button type="submit" id="searchButton">Search</button>
         </form>
+
+        <div class="loading" hidden>Chargement...</div>
+
+        <div class="error-message" hidden></div>
 
         <section class="weather-current">
           <div class="weather-container">
@@ -46,7 +50,7 @@
                   >
                   <span class="weather-details-label">Humidité</span>
                 </div>
-                <div class="weather-details-value">30%</div>
+                <div class="weather-details-humidity">30%</div>
               </li>
               <li class="weather-details-item">
                 <div class="weather-details-caract">
@@ -55,7 +59,7 @@
                   >
                   <span class="weather-details-label">Visibilité</span>
                 </div>
-                <div class="weather-details-value">10 Km</div>
+                <div class="weather-details-visibility">10 Km</div>
               </li>
               <li class="weather-details-item">
                 <div class="weather-details-caract">
@@ -64,7 +68,7 @@
                   >
                   <span class="weather-details-label">Vent</span>
                 </div>
-                <div class="weather-details-value">12 Km/h</div>
+                <div class="weather-details-wind">12 Km/h</div>
               </li>
             </ul>
           </div>

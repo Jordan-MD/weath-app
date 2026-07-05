@@ -1,9 +1,9 @@
-const searchInput = document.querySelector("input");
+import { handleSearch } from "./weatherController.js";
 
-const searchButton = document.querySelector("button");
+const searchForm = document.querySelector(".searchForm");
+const searchInput = document.querySelector("#city-input");
 
-searchButton.addEventListener("click", () => {
-  const ville = searchInput.value;
-  console.log(ville);
-  console.log("Recherche activer");
+searchForm.addEventListener("submit", (event) => {
+  const city = searchInput.value.trim();
+  handleSearch(event, city);
 });
