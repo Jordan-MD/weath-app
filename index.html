@@ -18,7 +18,7 @@
           <h1>Weather app MD</h1>
         </header>
 
-        <form class="searchForm" role="search" action="#" method="GET">
+        <form class="searchForm" action="#" method="GET">
           <input
             type="text"
             id="city-input"
@@ -29,12 +29,12 @@
           <button type="submit" id="searchButton">Search</button>
         </form>
 
-        <div class="loading" hidden>Chargement...</div>
+        <p class="loading" hidden>Chargement...</p>
 
-        <div class="error-message" hidden></div>
+        <p class="error-message" role="alert" hidden></p>
 
         <section class="weather-current">
-          <div class="weather-container">
+          <article class="weather-container">
             <div class="weather-card">
               <h2 class="weather-location">📍 Yaoundé</h2>
               <span class="weather-icon" aria-hidden="true">☀️</span>
@@ -50,7 +50,7 @@
                   >
                   <span class="weather-details-label">Humidité</span>
                 </div>
-                <div class="weather-details-humidity">30%</div>
+                <span class="weather-details-humidity">30%</span>
               </li>
               <li class="weather-details-item">
                 <div class="weather-details-caract">
@@ -59,7 +59,7 @@
                   >
                   <span class="weather-details-label">Visibilité</span>
                 </div>
-                <div class="weather-details-visibility">10 Km</div>
+                <span class="weather-details-visibility">10 Km</span>
               </li>
               <li class="weather-details-item">
                 <div class="weather-details-caract">
@@ -68,48 +68,48 @@
                   >
                   <span class="weather-details-label">Vent</span>
                 </div>
-                <div class="weather-details-wind">12 Km/h</div>
+                <span class="weather-details-wind">12 Km/h</span>
               </li>
             </ul>
-          </div>
+          </article>
         </section>
 
         <section class="weather-forecast">
           <ul class="weather-forecast-list">
             <li class="weather-forecast-item">
-              <div class="weather-forecast-day">Mar</div>
-              <div class="weather-forecast-temp">26°</div>
-              <div class="weather-forecast-icon" aria-hidden="true">🌧️</div>
+              <time class="weather-forecast-day">Mar</time>
+              <span class="weather-forecast-temp">26°</span>
+              <span class="weather-forecast-icon" aria-hidden="true">🌧️</span>
             </li>
             <li class="weather-forecast-item">
-              <div class="weather-forecast-day">Mer</div>
-              <div class="weather-forecast-temp">27°</div>
-              <div class="weather-forecast-icon" aria-hidden="true">☁️</div>
+              <time class="weather-forecast-day">Mer</time>
+              <span class="weather-forecast-temp">27°</span>
+              <span class="weather-forecast-icon" aria-hidden="true">☁️</span>
             </li>
             <li class="weather-forecast-item">
-              <div class="weather-forecast-day">Jeu</div>
-              <div class="weather-forecast-temp">28°</div>
-              <div class="weather-forecast-icon" aria-hidden="true">☁️</div>
+              <time class="weather-forecast-day">Jeu</time>
+              <span class="weather-forecast-temp">28°</span>
+              <span class="weather-forecast-icon" aria-hidden="true">☁️</span>
             </li>
             <li class="weather-forecast-item">
-              <div class="weather-forecast-day">Ven</div>
-              <div class="weather-forecast-temp">31°</div>
-              <div class="weather-forecast-icon" aria-hidden="true">☀️</div>
+              <time class="weather-forecast-day">Ven</time>
+              <span class="weather-forecast-temp">31°</span>
+              <span class="weather-forecast-icon" aria-hidden="true">☀️</span>
             </li>
             <li class="weather-forecast-item">
-              <div class="weather-forecast-day">Sam</div>
-              <div class="weather-forecast-temp">26°</div>
-              <div class="weather-forecast-icon" aria-hidden="true">🌧️</div>
+              <time class="weather-forecast-day">Sam</time>
+              <span class="weather-forecast-temp">26°</span>
+              <span class="weather-forecast-icon" aria-hidden="true">🌧️</span>
             </li>
             <li class="weather-forecast-item">
-              <div class="weather-forecast-day">Dim</div>
-              <div class="weather-forecast-temp">29°</div>
-              <div class="weather-forecast-icon" aria-hidden="true">☁️</div>
+              <time class="weather-forecast-day">Dim</time>
+              <span class="weather-forecast-temp">29°</span>
+              <span class="weather-forecast-icon" aria-hidden="true">☁️</span>
             </li>
             <li class="weather-forecast-item">
-              <div class="weather-forecast-day">Lun</div>
-              <div class="weather-forecast-temp">30°</div>
-              <div class="weather-forecast-icon" aria-hidden="true">☀️</div>
+              <time class="weather-forecast-day">Lun</time>
+              <span class="weather-forecast-temp">30°</span>
+              <span class="weather-forecast-icon" aria-hidden="true">☀️</span>
             </li>
           </ul>
         </section>
