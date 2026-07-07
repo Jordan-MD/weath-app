@@ -70,15 +70,18 @@ function createForecastCard(forecast) {
   const cardElement = document.createElement("li");
   cardElement.classList.add(
     "weather-forecast-card",
-    "bg-sky-100",
+    "bg-sky-100/40",
     "rounded-xl",
-    "p-4",
+    "p-3",
     "text-center",
     "flex",
     "flex-col",
     "items-center",
     "justify-center",
-    "gap-2",
+    "gap-1",
+    "shadow-md",
+    "hover:scale-105",
+    "transition-transform",
   );
 
   const day = document.createElement("time");
