@@ -1,20 +1,31 @@
 <!doctype html>
-
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./src/css/style.css" />
-
-    <script src="./src/js/main.js" type="module" defer></script>
-
     <title>Weather App MD</title>
+    <!-- La description descriptive qui s'affichera sous votre lien Google -->
+    <meta
+      name="description"
+      content="Check real-time weather forecasts, humidity, and wind speed for any city worldwide with Weather App MD. A sleek and responsive frontend application."
+    />
+
+    <!-- Balises Open Graph pour l'affichage lors des partages sur les réseaux sociaux -->
+    <meta property="og:title" content="Weather App MD" />
+    <meta
+      property="og:description"
+      content="Real-time global weather tracker."
+    />
+
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script src="./src/js/main.js" type="module" defer></script>
   </head>
 
   <body class="h-full grid place-items-center bg-sky-100">
-    <main class="bg-[url('/src/asset/images/vitre_humide.jpg')] bg-cover bg-center h-screen w-full grid place-items-center">
+    <main
+      class="bg-[url('/src/asset/images/vitre_humide.jpg')] bg-cover bg-center h-screen w-full grid place-items-center"
+    >
       <div
         class="weather-app max-w-md mx-auto bg-sky-50/80 rounded-2xl shadow-2xl p-6 space-y-6"
       >
@@ -63,17 +74,23 @@
         <section
           class="weather-current flex flex-col justify-around items-center gap-4"
         >
-          <article class="weather-card w-full bg-sky-10 rounded-xl p-4 text-center flex flex-col items-center justify-center gap-2 shadow-md">
+          <article
+            class="weather-card w-full bg-sky-10 rounded-xl p-4 text-center flex flex-col items-center justify-center gap-2 shadow-md"
+          >
             <h2 class="weather-location text-2xl font-bold text-gray-500">
               Yaoundé, CM
             </h2>
-            <img class="weather-icon "></img>
+            <img class="weather-icon" />
             <p class="weather-desc">Ensoleillé</p>
             <span class="weather-temp">27°C</span>
           </article>
 
-          <ul class="weather-details bg-gray-200/50 rounded-xl grid grid-cols-3 gap-2 p-1 shadow-blue-500/20 shadow-lg">
-            <li class="weather-details-item border-3 border-gray-300 rounded-xl p-4 place-items-center text-center">
+          <ul
+            class="weather-details bg-gray-200/50 rounded-xl grid grid-cols-3 gap-2 p-1 shadow-blue-500/20 shadow-lg"
+          >
+            <li
+              class="weather-details-item border-3 border-gray-300 rounded-xl p-4 place-items-center text-center"
+            >
               <div class="characteristic">
                 <span class="weather-details-icon" aria-hidden="true">💧</span>
 
@@ -83,8 +100,9 @@
               <span class="weather-details-humidity">30%</span>
             </li>
 
-            <li class="weather-details-item border-3 border-gray-300 rounded-xl p-4 place-items-center text-center">
-
+            <li
+              class="weather-details-item border-3 border-gray-300 rounded-xl p-4 place-items-center text-center"
+            >
               <div class="characteristic">
                 <span class="weather-details-icon" aria-hidden="true">👁</span>
 
@@ -94,8 +112,9 @@
               <span class="weather-details-visibility">10 Km</span>
             </li>
 
-            <li class="weather-details-item border-3 border-gray-300 rounded-xl p-4 place-items-center text-center">
-
+            <li
+              class="weather-details-item border-3 border-gray-300 rounded-xl p-4 place-items-center text-center"
+            >
               <div class="characteristic">
                 <span class="weather-details-icon" aria-hidden="true">🌬</span>
 
